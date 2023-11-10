@@ -472,7 +472,7 @@ struct ContentView: View {
                 clouser()
             } label: {
                 Group{
-                    Text("see all ") + Text(Image(ImageCollection.vector,bundle:.main))
+                    Text("see all ") + Text(Image(ImageCollection.image29,bundle:.main))
                 }
                 .foregroundStyle(.textColor4)
                 .font(.custom(CustomFonts.medium, size: 14))

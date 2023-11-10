@@ -38,7 +38,7 @@ struct ImageCollection{
     static let course8 = "course8"
     static let course9 = "course9"
 
-    static let vector = "vector"
+    static let image29 = "image 29"
     static let image1 = "image1"
     static let image2 = "image2"
     static let image24 = "image 24"
