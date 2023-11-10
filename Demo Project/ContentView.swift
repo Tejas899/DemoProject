@@ -245,12 +245,24 @@ struct ContentView: View {
                     switch item{
                     case 0:
                         CustomeCell(short: .constant("B.Tech"), name: .constant("2.4K Enrolled"),  img: ImageCollection.course2, showImg: true)
+                            .onTapGesture {
+                                path.append("CourseListView")
+                            }
                     case 1:
                         CustomeCell(short: .constant("UPSC"), name: .constant("2.4K Enrolled"), img: ImageCollection.course7, showImg: true)
+                            .onTapGesture {
+                                path.append("CourseListView")
+                            }
                     case 2:
                         CustomeCell(short: .constant("ISRO"), name: .constant("2.4K Enrolled"), img: ImageCollection.course9, showImg: true)
+                            .onTapGesture {
+                                path.append("CourseListView")
+                            }
                     case 3:
                         CustomeCell(short: .constant("GATE"), name: .constant("2.4K Enrolled"), img:ImageCollection.course8, showImg: true)
+                            .onTapGesture {
+                                path.append("CourseListView")
+                            }
                         
                     default:
                         CustomeCell(short: .constant("GATE"), name: .constant("2.4K Enrolled"), img: ImageCollection.course2)
