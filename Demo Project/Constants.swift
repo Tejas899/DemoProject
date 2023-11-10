@@ -39,6 +39,12 @@ struct ImageCollection{
     static let vector = "vector"
     static let image1 = "image1"
     static let image2 = "image2"
+    static let image24 = "image 24"
+    static let image26 = "image 26"
+    static let image27 = "image 27"
+    static let rectangle1 = "rectangle1"
+    static let profile1 = "Profile1"
+    static let profile2 = "Profile2"
 }
 
 struct CustomFonts{

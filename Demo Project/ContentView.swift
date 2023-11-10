@@ -12,6 +12,7 @@ struct ContentView: View {
     var screenWidth = UIScreen.main.bounds.width
     var screenHeight = UIScreen.main.bounds.height
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    let profileImage = [ImageCollection.profile1,ImageCollection.profile2 ]
     @State var path: [String] = []
     
     
@@ -269,45 +270,45 @@ struct ContentView: View {
             
             ScrollView(.horizontal,showsIndicators:false) {
                 HStack{
-                    ForEach(0..<3){_ in
-                        VStack{
-                            HStack{
-                                VStack(alignment: .leading){
-                                    VStack(alignment: .leading){
-                                        Text("Z Transform using EQN I")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.semiBold, size: 14))
-                                        
-                                        Text("Digital Signal Processing")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.regular, size: 12))
-                                    }
-                                    .frame(maxWidth: .infinity,alignment: .topLeading)
-                                    .padding(.leading)
-                                    
-                                    Button(action: {
-                                        
-                                    }, label: {
-                                        VStack{
-                                            Text("9mins left")
-                                                .foregroundStyle(.color2)
-                                                .font(.custom(CustomFonts.semiBold, size: 12))
-                                        }
-                                        .frame(width: 90, height: 30)
-                                    })
-                                    
-                                }
-                                Image(ImageCollection.image1, bundle: .main)
+                    ForEach(0..<3){ item in
+                        HStack{
+                            VStack(alignment:.leading){
+                                Image(ImageCollection.profile1, bundle: .main)
                                     .resizable()
                                     .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
                                 
+                                Text("B.TECH • ECE")
+                                    .foregroundStyle(.textColor1)
+                                    .font(.custom(CustomFonts.extraLight, size: 10))
+                                    .padding(.top,5)
+                                   
+                                Text("Digital Signal Processing")
+                                    .foregroundStyle(.textColor4)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .font(.custom(CustomFonts.semiBold, size: 14))
+                                    .padding(.top,5)
+                                Text("By Hari Krishna")
+                                    .foregroundStyle(.textColor1)
+                                    .font(.custom(CustomFonts.extraLight, size: 10))
+                                    .padding(.top,2)
+                                HStack{
+                                    Text("₹749")
+                                        .foregroundStyle(.textColor4)
+                                        .font(.custom(CustomFonts.semiBold, size: 14))
+                                    Text("₹749")
+                                        .foregroundStyle(.textColor1)
+                                        .font(.custom(CustomFonts.extraLight, size: 10))
+                                        .strikethrough()
+                                }
+                                .padding(.top,5)
+                                
+                                
                             }
                         }
-                        .frame(width: UIScreen.main.bounds.width - 20 ,height: UIScreen.main.bounds.height * 0.15)
+                        .frame(width: 150)
                         .background(.white)
                         .clipShape(
                             .rect(
-                                topLeadingRadius: 10,
                                 bottomLeadingRadius: 10,
                                 bottomTrailingRadius: 10,
                                 topTrailingRadius: 10
@@ -331,40 +332,40 @@ struct ContentView: View {
                 HStack{
                     ForEach(0..<3){_ in
                         VStack{
-                            HStack{
+                            VStack(alignment: .leading){
                                 VStack(alignment: .leading){
-                                    VStack(alignment: .leading){
-                                        Text("Z Transform using EQN I")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.semiBold, size: 14))
-                                        
-                                        Text("Digital Signal Processing")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.regular, size: 12))
-                                    }
-                                    .frame(maxWidth: .infinity,alignment: .topLeading)
-                                    .padding(.leading)
+                                    Text("Have any queries?")
+                                        .foregroundStyle(.textColor2)
+                                        .font(.custom(CustomFonts.medium, size: 16))
                                     
-                                    Button(action: {
-                                        
-                                    }, label: {
-                                        VStack{
-                                            Text("9mins left")
-                                                .foregroundStyle(.color2)
-                                                .font(.custom(CustomFonts.semiBold, size: 12))
-                                        }
-                                        .frame(width: 90, height: 30)
-                                    })
-                                    
+                                    Text("Talk to an academic counsellor for free")
+                                        .zIndex(1)
+                                        .foregroundStyle(.textColor2)
+                                        .font(.custom(CustomFonts.light, size: 12))
                                 }
-                                Image(ImageCollection.image1, bundle: .main)
-                                    .resizable()
-                                    .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
+                                .frame(maxWidth: .infinity,alignment: .topLeading)
+                                .padding(.leading,30)
                                 
+                                Button(action: {
+                                    
+                                }, label: {
+                                    VStack{
+                                        Text("Call now")
+                                            .foregroundStyle(.white)
+                                            .font(.custom(CustomFonts.medium, size: 12))
+                                        
+                                    }
+                                    .frame(width: 90, height: 30)
+                                    .background(ColorsCollection.color2)
+                                    .clipShape(Capsule())
+                                    .padding(.leading,30)
+                                    
+                                })
+                                .padding(.top)
                             }
                         }
                         .frame(width: UIScreen.main.bounds.width - 20 ,height: UIScreen.main.bounds.height * 0.15)
-                        .background(.white)
+                        .background(.red)
                         .clipShape(
                             .rect(
                                 topLeadingRadius: 10,
