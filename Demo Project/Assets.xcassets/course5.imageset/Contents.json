@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "eee-eng.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
