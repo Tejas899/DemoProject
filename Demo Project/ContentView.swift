@@ -17,7 +17,7 @@ struct ContentView: View {
     
     
     var body: some View {
-       NavigationStack(path: $path) {
+        NavigationStack(path: $path) {
             ScrollView(showsIndicators:false){
                 VStack{
                     header
@@ -281,7 +281,7 @@ struct ContentView: View {
                                     .foregroundStyle(.textColor1)
                                     .font(.custom(CustomFonts.extraLight, size: 10))
                                     .padding(.top,5)
-                                   
+                                
                                 Text("Digital Signal Processing")
                                     .foregroundStyle(.textColor4)
                                     .fixedSize(horizontal: false, vertical: true)
@@ -334,14 +334,9 @@ struct ContentView: View {
                         VStack{
                             VStack(alignment: .leading){
                                 VStack(alignment: .leading){
-                                    Text("Have any queries?")
-                                        .foregroundStyle(.textColor2)
+                                    Text("GATE 2022 Crash Course")
+                                        .foregroundStyle(ColorsCollection.color5)
                                         .font(.custom(CustomFonts.medium, size: 16))
-                                    
-                                    Text("Talk to an academic counsellor for free")
-                                        .zIndex(1)
-                                        .foregroundStyle(.textColor2)
-                                        .font(.custom(CustomFonts.light, size: 12))
                                 }
                                 .frame(maxWidth: .infinity,alignment: .topLeading)
                                 .padding(.leading,30)
@@ -350,13 +345,13 @@ struct ContentView: View {
                                     
                                 }, label: {
                                     VStack{
-                                        Text("Call now")
+                                        Text("Know more")
                                             .foregroundStyle(.white)
                                             .font(.custom(CustomFonts.medium, size: 12))
                                         
                                     }
                                     .frame(width: 90, height: 30)
-                                    .background(ColorsCollection.color2)
+                                    .background(ColorsCollection.color5)
                                     .clipShape(Capsule())
                                     .padding(.leading,30)
                                     
@@ -364,8 +359,16 @@ struct ContentView: View {
                                 .padding(.top)
                             }
                         }
-                        .frame(width: UIScreen.main.bounds.width - 20 ,height: UIScreen.main.bounds.height * 0.15)
-                        .background(.red)
+                        .frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.15)
+                        .background(ColorsCollection.color6)
+                        
+                        .overlay(alignment: .bottomTrailing) {
+                            ZStack{
+                                Image(ImageCollection.image26, bundle: .main)
+                                    .resizable()
+                                    .frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.15)
+                            }
+                        }
                         .clipShape(
                             .rect(
                                 topLeadingRadius: 10,
@@ -374,6 +377,7 @@ struct ContentView: View {
                                 topTrailingRadius: 10
                             )
                         )
+                        .padding(.trailing,10)
                     }
                 }
             }
@@ -391,40 +395,57 @@ struct ContentView: View {
                 HStack{
                     ForEach(0..<3){_ in
                         VStack{
-                            HStack{
-                                VStack(alignment: .leading){
-                                    VStack(alignment: .leading){
-                                        Text("Z Transform using EQN I")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.semiBold, size: 14))
+                            VStack{
+                                Spacer()
+                                HStack{
+                                    Button(action: {
                                         
-                                        Text("Digital Signal Processing")
-                                            .foregroundStyle(.textColor4)
-                                            .font(.custom(CustomFonts.regular, size: 12))
-                                    }
-                                    .frame(maxWidth: .infinity,alignment: .topLeading)
-                                    .padding(.leading)
+                                    }, label: {
+                                        Image(ImageCollection.image28, bundle: .main)
+                                            .resizable()
+                                            .frame(width: 100, height: 30)
+                                            .padding(.leading,10)
+                                    })
                                     
                                     Button(action: {
                                         
                                     }, label: {
-                                        VStack{
-                                            Text("9mins left")
-                                                .foregroundStyle(.color2)
-                                                .font(.custom(CustomFonts.semiBold, size: 12))
-                                        }
-                                        .frame(width: 90, height: 30)
+                                        Image(ImageCollection.image27, bundle: .main)
+                                            .resizable()
+                                            .frame(width: 50, height: 30)
+                                            .padding(.leading,15)
                                     })
                                     
+                                    Spacer()
                                 }
-                                Image(ImageCollection.image1, bundle: .main)
-                                    .resizable()
-                                    .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
+                                .frame(width: UIScreen.main.bounds.width * 0.7)
                                 
+                                
+                            }.frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.2 * 0.7, alignment:.top)
+                                .background{
+                                    Image(ImageCollection.image24, bundle: .main)
+                                        .resizable()
+                                }
+                            HStack{
+                                VStack(alignment: .leading){
+                                    
+                                    Text("NEET Crash Course - Final")
+                                        .foregroundStyle(.black)
+                                        .font(.custom(CustomFonts.semiBold, size: 12))
+                                    
+                                    Text("Touch to Electromagnetic, Induction, Inductance")
+                                        .foregroundStyle(.textColor1)
+                                        .font(.custom(CustomFonts.regular, size: 10))
+                                }
+                                Spacer()
                             }
+                            .frame( height: UIScreen.main.bounds.height * 0.2 * 0.3, alignment:.topLeading)
+                            .padding(.leading,10)
+                            
+                            
                         }
-                        .frame(width: UIScreen.main.bounds.width - 20 ,height: UIScreen.main.bounds.height * 0.15)
-                        .background(.white)
+                        .frame(width: UIScreen.main.bounds.width * 0.7 ,height: UIScreen.main.bounds.height * 0.2)
+                        .background(ColorsCollection.color2.opacity(0.3))
                         .clipShape(
                             .rect(
                                 topLeadingRadius: 10,
@@ -433,6 +454,7 @@ struct ContentView: View {
                                 topTrailingRadius: 10
                             )
                         )
+                        .padding(.trailing,10)
                     }
                 }
             }

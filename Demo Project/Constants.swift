@@ -12,6 +12,8 @@ struct ColorsCollection{
     static let color2 = Color("Color2", bundle: .main)
     static let color3 = Color("Color3", bundle: .main)
     static let color4 = Color("Color4", bundle: .main)
+    static let color5 = Color("Color5", bundle: .main)
+    static let color6 = Color("Color6", bundle: .main)
     static let textColor1 = Color("textColor1", bundle: .main)
     static let textColor2 = Color("textColor2", bundle: .main)
     static let textColor3 = Color("textColor3", bundle: .main)
@@ -42,6 +44,7 @@ struct ImageCollection{
     static let image24 = "image 24"
     static let image26 = "image 26"
     static let image27 = "image 27"
+    static let image28 = "image 28"
     static let rectangle1 = "rectangle1"
     static let profile1 = "Profile1"
     static let profile2 = "Profile2"
