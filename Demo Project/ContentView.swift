@@ -209,7 +209,7 @@ struct ContentView: View {
                         })
                         
                     }
-                    Image("image1", bundle: .main)
+                    Image(ImageCollection.image1, bundle: .main)
                         .resizable()
                         .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
                     
@@ -297,7 +297,7 @@ struct ContentView: View {
                                     })
                                     
                                 }
-                                Image("image1", bundle: .main)
+                                Image(ImageCollection.image1, bundle: .main)
                                     .resizable()
                                     .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
                                 
@@ -357,7 +357,7 @@ struct ContentView: View {
                                     })
                                     
                                 }
-                                Image("image1", bundle: .main)
+                                Image(ImageCollection.image1, bundle: .main)
                                     .resizable()
                                     .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
                                 
@@ -416,7 +416,7 @@ struct ContentView: View {
                                     })
                                     
                                 }
-                                Image("image1", bundle: .main)
+                                Image(ImageCollection.image1, bundle: .main)
                                     .resizable()
                                     .frame(width: (UIScreen.main.bounds.width - 20 ) * 0.35 ,height: UIScreen.main.bounds.height * 0.15)
                                 

@@ -36,17 +36,20 @@ struct Branch: Codable {
 @Observable class UsersViewModel {
     private var cancellables = Set<AnyCancellable>()
     let apiHandler =  ApiHandler()
-     var courseData: CourseData = CourseData(status: "", branches: [])
+    var courseData: CourseData = CourseData(status: "", branches: [])
     
     func fetchUsers() {
         apiHandler.request(ofType: CourseData.self, Apidata(url: URL(string: "https://api.msigma.in/btech/v2/branches")!, method: .get))
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { data in
-            
-        }, receiveValue: {[weak self] data in
-            self?.courseData = data
-            
-        }).store(in: &cancellables)
+            .sink(receiveCompletion: { (completion) in
+                switch completion {
+                case .failure(let error): print("Api request failed: \(error)")
+                case .finished: print("Publisher is finished")
+                }
+            }, receiveValue: {[weak self] data in
+                self?.courseData = data
+                
+            }).store(in: &cancellables)
         
     }
 }
@@ -54,14 +57,14 @@ struct Branch: Codable {
 
 
 class ApiHandler {
-   
+    
     
     func request <T: Codable>(ofType type: T.Type, _ apiData: Apidata) -> AnyPublisher<T, Error>{
         var request = URLRequest(url: apiData.url)
         request.httpMethod = apiData.method.rawValue
         
         apiData.headers?.forEach { request.addValue($0.value as! String, forHTTPHeaderField: $0.key) }
-       
+        
         return URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response -> Data in

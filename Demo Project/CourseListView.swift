@@ -23,7 +23,7 @@ struct CourseListView: View {
     
     var body: some View {
         VStack{
-            if  viewModel.courseData.status != ""{
+           
                 HStack{
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
@@ -49,6 +49,9 @@ struct CourseListView: View {
                 .padding(.leading,10)
                 
                 
+              
+               
+            if  viewModel.courseData.status != ""{
                 VStack{
                     HStack{
                         Image(ImageCollection.magnifyIcon, bundle: .main)
@@ -83,12 +86,14 @@ struct CourseListView: View {
                         .foregroundStyle(.white)
                 })
                 .padding(.top)
-                
                 scrollDataView()
                     .padding(.top)
                 
             } else{
-                EmptyView()
+                VStack{
+                    EmptyView()
+                    Spacer()
+                }
             }
         }
         .frame(width: UIScreen.main.bounds.width)
