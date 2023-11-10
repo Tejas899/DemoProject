@@ -7,18 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91C99B6F2AFD718300A05978 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C99B6E2AFD718300A05978 /* CourseListView.swift */; };
 		91D3CEFA2AFD2C5100B164CB /* Demo_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CEF92AFD2C5100B164CB /* Demo_ProjectApp.swift */; };
 		91D3CEFC2AFD2C5100B164CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CEFB2AFD2C5100B164CB /* ContentView.swift */; };
 		91D3CEFE2AFD2C5200B164CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CEFD2AFD2C5200B164CB /* Assets.xcassets */; };
 		91D3CF012AFD2C5200B164CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF002AFD2C5200B164CB /* Preview Assets.xcassets */; };
+		91D3CF082AFD2D8100B164CB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF072AFD2D8100B164CB /* Color.xcassets */; };
+		91D3CF0A2AFD2DB900B164CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CF092AFD2DB900B164CB /* Constants.swift */; };
+		91D3CF152AFD35CF00B164CB /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF0C2AFD35CF00B164CB /* Inter-ExtraBold.ttf */; };
+		91D3CF162AFD35CF00B164CB /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF0D2AFD35CF00B164CB /* Inter-Thin.ttf */; };
+		91D3CF172AFD35CF00B164CB /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF0E2AFD35CF00B164CB /* Inter-Medium.ttf */; };
+		91D3CF182AFD35CF00B164CB /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF0F2AFD35CF00B164CB /* Inter-Regular.ttf */; };
+		91D3CF192AFD35CF00B164CB /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF102AFD35CF00B164CB /* Inter-SemiBold.ttf */; };
+		91D3CF1A2AFD35CF00B164CB /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF112AFD35CF00B164CB /* Inter-Light.ttf */; };
+		91D3CF1B2AFD35CF00B164CB /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF122AFD35CF00B164CB /* Inter-Black.ttf */; };
+		91D3CF1C2AFD35CF00B164CB /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF132AFD35CF00B164CB /* Inter-ExtraLight.ttf */; };
+		91D3CF1D2AFD35CF00B164CB /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF142AFD35CF00B164CB /* Inter-Bold.ttf */; };
+		91D3CF202AFD63EC00B164CB /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CF1F2AFD63EC00B164CB /* ApiHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91C99B6E2AFD718300A05978 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		91D3CEF62AFD2C5100B164CB /* Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D3CEF92AFD2C5100B164CB /* Demo_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_ProjectApp.swift; sourceTree = "<group>"; };
 		91D3CEFB2AFD2C5100B164CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91D3CEFD2AFD2C5200B164CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91D3CF002AFD2C5200B164CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91D3CF072AFD2D8100B164CB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		91D3CF092AFD2DB900B164CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91D3CF0C2AFD35CF00B164CB /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		91D3CF0D2AFD35CF00B164CB /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		91D3CF0E2AFD35CF00B164CB /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		91D3CF0F2AFD35CF00B164CB /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		91D3CF102AFD35CF00B164CB /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		91D3CF112AFD35CF00B164CB /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		91D3CF122AFD35CF00B164CB /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		91D3CF132AFD35CF00B164CB /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		91D3CF142AFD35CF00B164CB /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		91D3CF1E2AFD361E00B164CB /* Demo-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Demo-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		91D3CF1F2AFD63EC00B164CB /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +78,15 @@
 		91D3CEF82AFD2C5100B164CB /* Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				91D3CF1E2AFD361E00B164CB /* Demo-Project-Info.plist */,
+				91D3CF0B2AFD35B900B164CB /* Fonts */,
 				91D3CEF92AFD2C5100B164CB /* Demo_ProjectApp.swift */,
+				91D3CF092AFD2DB900B164CB /* Constants.swift */,
 				91D3CEFB2AFD2C5100B164CB /* ContentView.swift */,
+				91C99B6E2AFD718300A05978 /* CourseListView.swift */,
+				91D3CF1F2AFD63EC00B164CB /* ApiHandler.swift */,
 				91D3CEFD2AFD2C5200B164CB /* Assets.xcassets */,
+				91D3CF072AFD2D8100B164CB /* Color.xcassets */,
 				91D3CEFF2AFD2C5200B164CB /* Preview Content */,
 			);
 			path = "Demo Project";
@@ -65,6 +98,22 @@
 				91D3CF002AFD2C5200B164CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91D3CF0B2AFD35B900B164CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				91D3CF122AFD35CF00B164CB /* Inter-Black.ttf */,
+				91D3CF142AFD35CF00B164CB /* Inter-Bold.ttf */,
+				91D3CF0C2AFD35CF00B164CB /* Inter-ExtraBold.ttf */,
+				91D3CF132AFD35CF00B164CB /* Inter-ExtraLight.ttf */,
+				91D3CF112AFD35CF00B164CB /* Inter-Light.ttf */,
+				91D3CF0E2AFD35CF00B164CB /* Inter-Medium.ttf */,
+				91D3CF0F2AFD35CF00B164CB /* Inter-Regular.ttf */,
+				91D3CF102AFD35CF00B164CB /* Inter-SemiBold.ttf */,
+				91D3CF0D2AFD35CF00B164CB /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +175,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D3CF012AFD2C5200B164CB /* Preview Assets.xcassets in Resources */,
+				91D3CF1A2AFD35CF00B164CB /* Inter-Light.ttf in Resources */,
 				91D3CEFE2AFD2C5200B164CB /* Assets.xcassets in Resources */,
+				91D3CF172AFD35CF00B164CB /* Inter-Medium.ttf in Resources */,
+				91D3CF082AFD2D8100B164CB /* Color.xcassets in Resources */,
+				91D3CF192AFD35CF00B164CB /* Inter-SemiBold.ttf in Resources */,
+				91D3CF1D2AFD35CF00B164CB /* Inter-Bold.ttf in Resources */,
+				91D3CF162AFD35CF00B164CB /* Inter-Thin.ttf in Resources */,
+				91D3CF1B2AFD35CF00B164CB /* Inter-Black.ttf in Resources */,
+				91D3CF1C2AFD35CF00B164CB /* Inter-ExtraLight.ttf in Resources */,
+				91D3CF152AFD35CF00B164CB /* Inter-ExtraBold.ttf in Resources */,
+				91D3CF182AFD35CF00B164CB /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +198,9 @@
 			files = (
 				91D3CEFC2AFD2C5100B164CB /* ContentView.swift in Sources */,
 				91D3CEFA2AFD2C5100B164CB /* Demo_ProjectApp.swift in Sources */,
+				91C99B6F2AFD718300A05978 /* CourseListView.swift in Sources */,
+				91D3CF0A2AFD2DB900B164CB /* Constants.swift in Sources */,
+				91D3CF202AFD63EC00B164CB /* ApiHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +337,11 @@
 				DEVELOPMENT_TEAM = V8GQJ49YQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +366,11 @@
 				DEVELOPMENT_TEAM = V8GQJ49YQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
