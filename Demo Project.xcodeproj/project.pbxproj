@@ -24,7 +24,6 @@
 		91D3CF1C2AFD35CF00B164CB /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF132AFD35CF00B164CB /* Inter-ExtraLight.ttf */; };
 		91D3CF1D2AFD35CF00B164CB /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91D3CF142AFD35CF00B164CB /* Inter-Bold.ttf */; };
 		91D3CF202AFD63EC00B164CB /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CF1F2AFD63EC00B164CB /* ApiHandler.swift */; };
-		B67142622B024D33006C7C81 /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67142612B024D33006C7C81 /* CustomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		91D3CF142AFD35CF00B164CB /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		91D3CF1E2AFD361E00B164CB /* Demo-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Demo-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 		91D3CF1F2AFD63EC00B164CB /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
-		B67142612B024D33006C7C81 /* CustomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				91D3CEFD2AFD2C5200B164CB /* Assets.xcassets */,
 				91D3CF072AFD2D8100B164CB /* Color.xcassets */,
 				91D3CEFF2AFD2C5200B164CB /* Preview Content */,
-				B67142612B024D33006C7C81 /* CustomeCell.swift */,
 			);
 			path = "Demo Project";
 			sourceTree = "<group>";
@@ -199,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67142622B024D33006C7C81 /* CustomeCell.swift in Sources */,
 				91D3CEFC2AFD2C5100B164CB /* ContentView.swift in Sources */,
 				91D3CEFA2AFD2C5100B164CB /* Demo_ProjectApp.swift in Sources */,
 				91C99B6F2AFD718300A05978 /* CourseListView.swift in Sources */,
