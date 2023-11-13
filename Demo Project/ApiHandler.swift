@@ -33,10 +33,10 @@ struct Branch: Codable {
     }
 }
 
-@Observable class UsersViewModel {
+class UsersViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     let apiHandler =  ApiHandler()
-    var courseData: CourseData = CourseData(status: "", branches: [])
+   @Published var courseData: CourseData = CourseData(status: "", branches: [])
     
     func fetchUsers() {
         apiHandler.request(ofType: CourseData.self, Apidata(url: URL(string: "https://api.msigma.in/btech/v2/branches")!, method: .get))
